@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyle Kelly — Web Developer</title>
+  <meta name="description" content="Portfolio of Lyle Kelly, Web Developer in Johannesburg. HTML, CSS, JavaScript, Python, Django, WordPress, WooCommerce, Shopify." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="brand">LK</a>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="container">
+        <h1 class="headline">Lyle Kelly</h1>
+        <p class="sub">Web Developer • Johannesburg</p>
+        <p class="tagline">I build responsive, user‑friendly websites and web apps with HTML, CSS, JavaScript, Python/Django, and WordPress.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>About Me</h2>
+          <p>Solution-driven Web Developer with experience in front-end and back-end development, IT support, and SEO. Skilled in building responsive, user-friendly websites and web applications using HTML5, CSS3, JavaScript, Python, Django, Bootstrap, WordPress, WooCommerce, and Shopify. Adept at troubleshooting, optimizing performance, and implementing SEO strategies to boost online visibility. I bring a blend of creative problem-solving, technical expertise, and a commitment to delivering high-quality digital experiences.</p>
+        </div>
+        <div class="about-cards">
+          <div class="card">
+            <h3>Location</h3>
+            <p>Randfontein, Johannesburg</p>
+          </div>
+          <div class="card">
+            <h3>Experience</h3>
+            <p>Web Artist (2023–Present), Freelance (2021–2023), Vodacom4U (2016–2020)</p>
+          </div>
+          <div class="card">
+            <h3>Contact</h3>
+            <p><a href="mailto:lylekelly90@gmail.com">lylekelly90@gmail.com</a> • +27 72 372 7491</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li><span>HTML5</span></li>
+          <li><span>CSS3 / Bootstrap</span></li>
+          <li><span>JavaScript / jQuery</span></li>
+          <li><span>Python / Django</span></li>
+          <li><span>WordPress</span></li>
+          <li><span>WooCommerce</span></li>
+          <li><span>Shopify</span></li>
+          <li><span>SEO</span></li>
+          <li><span>Cross‑browser testing</span></li>
+          <li><span>Zendesk</span></li>
+          <li><span>Remote Support (RDP / TeamViewer)</span></li>
+          <li><span>DNS & Email Configuration</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Marketing Site</h3>
+              <p>Designed and developed a responsive marketing website using HTML5, CSS3, JavaScript, and jQuery. Focused on clean UI, fast load times, and accessibility.</p>
+              <ul class="stack"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>jQuery</li></ul>
+              <div class="links">
+                <a class="btn tiny" href="https://buydop.co.za/" aria-disabled="true">Live</a>
+                <a class="btn tiny ghost" href="#" aria-disabled="true"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3>WordPress E‑commerce Build</h3>
+              <p>Built a custom WooCommerce store with a tailored theme and filters. Integrated payment gateways and optimized product pages for SEO.</p>
+              <ul class="stack"><li>WordPress</li><li>WooCommerce</li><li>PHP</li><li>SEO</li></ul>
+              <div class="links">
+                <a class="btn tiny" href="https://vodacom4u.co.za/" aria-disabled="true">Live (NDA)</a>
+                <a class="btn tiny ghost" href="#" aria-disabled="true">GitHub (N/A)</a>
+              </div>
+            </div>
+          </article>
+
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2>Resume</h2>
+        <p>Download a copy of my current CV.</p>
+        <div class="cta">
+          <a class="btn" href="assets/Lyle_Kelly_WebDev_CV.docx" download>Download CV (.docx)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Have a project in mind or want to chat? Send me a message.</p>
+        <!-- Formspree-ready; replace YOUR_FORM_ID with your form id -->
+        <form id="contactForm" action="https://formspree.io/f/xayajelw" method="POST" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <small class="error" data-for="name"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" required />
+            <small class="error" data-for="email"></small>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small class="error" data-for="message"></small>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-meta">
+          <a href="mailto:lylekelly90@gmail.com">lylekelly90@gmail.com</a>
+          <span>•</span>
+          <a href="tel:+27723727491">+27 72 372 7491</a>
+          <span>•</span>
+          <a href="https://github.com/" target="https://github.com/lylo22" rel="noopener">GitHub</a>
+          <span>•</span>
+          <a href="https://www.linkedin.com/" target="https://www.linkedin.com/in/lyle-kelly-244a07145/" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Lyle Kelly. Built with HTML, CSS & JS.</p>
+      <a class="to-top" href="#home" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

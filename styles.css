@@ -1,0 +1,104 @@
+/* Dark, modern portfolio theme */
+:root{
+  --bg: #0b0f14;
+  --panel: #121821;
+  --muted: #8892a6;
+  --text: #e6edf3;
+  --brand: #6ea8fe;
+  --brand-2: #a682ff;
+  --border: #1f2a38;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+*{box-sizing: border-box}
+html,body{margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(1000px 600px at 80% -10%, rgba(110,168,254,.15), transparent 60%),
+              radial-gradient(800px 500px at 10% -20%, rgba(166,130,255,.12), transparent 65%),
+              var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+.site-header{
+  position: sticky; top:0; z-index: 50;
+  background: rgba(11,15,20,.85); backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border);
+}
+.site-header .brand{
+  display:inline-block; padding:14px 16px; margin-left:6px;
+  font-weight:800; letter-spacing:.5px; text-decoration:none; color:var(--text);
+  border:1px solid var(--border); border-radius:12px; background:var(--panel);
+}
+.nav{display:flex; align-items:center; justify-content: space-between;}
+.nav-toggle{display:none; background:none; border:none; font-size:22px; color:var(--text); padding:12px 16px; cursor:pointer}
+.nav-links{display:flex; list-style:none; gap:6px; margin:0; padding:8px}
+.nav-links a{
+  display:inline-block; padding:10px 14px; border-radius:10px; text-decoration:none; color:var(--text);
+}
+.nav-links a:hover{background: var(--panel); color:#fff}
+
+.section{padding:72px 0}
+.hero{padding:120px 0 96px 0; text-align:center}
+.headline{font-size:48px; line-height:1.1; margin:0 0 8px}
+.sub{color:var(--muted); margin:0 0 12px}
+.tagline{max-width:700px; margin:0 auto 24px; color:#cbd5e1; font-size:18px}
+
+.btn{
+  display:inline-block; border:1px solid var(--border); background:var(--panel);
+  color: var(--text); padding:10px 16px; border-radius:12px; text-decoration:none;
+  box-shadow: var(--shadow);
+}
+.btn.primary{background: linear-gradient(135deg, var(--brand), var(--brand-2)); border:0; color:#0b0f14; font-weight:700}
+.btn.ghost{background: transparent}
+.btn.tiny{padding:8px 10px; font-size:12px}
+
+.grid-2{display:grid; grid-template-columns: 1.2fr .8fr; gap:24px; align-items:start}
+.about-cards{display:grid; gap:16px}
+.card{
+  background: var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; box-shadow: var(--shadow);
+}
+.card h3{margin:0 0 8px}
+
+.skill-list{display:grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap:10px; list-style:none; margin:0; padding:0}
+.skill-list li{
+  background: var(--panel); border:1px solid var(--border); padding:10px 12px; border-radius:12px; text-align:center;
+}
+
+.projects-grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:18px}
+.project-card{background: var(--panel); border:1px solid var(--border); border-radius:16px; box-shadow: var(--shadow); overflow:hidden}
+.project-content{padding:18px}
+.stack{display:flex; flex-wrap:wrap; list-style:none; gap:8px; padding:0; margin:10px 0}
+.stack li{border:1px solid var(--border); border-radius:999px; padding:6px 10px; font-size:12px; color:#cbd5e1}
+
+form{max-width:680px}
+.form-row{display:flex; flex-direction:column; margin-bottom:14px}
+label{font-weight:600; margin-bottom:6px}
+input, textarea{
+  padding:12px 14px; border-radius:12px; border:1px solid var(--border); background: #0f1520; color: var(--text);
+}
+input:focus, textarea:focus{outline:2px solid var(--brand)}
+
+.error{color:#ff9292; min-height:16px; font-size:12px}
+.form-note{color:var(--muted); font-size:12px}
+
+.contact-meta{margin-top:18px; display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+.contact-meta a{text-decoration:none; color:#b7c2d6}
+.contact-meta a:hover{color:#fff}
+
+.site-footer{border-top:1px solid var(--border); padding:24px 0; color: var(--muted)}
+.site-footer .container{display:flex; justify-content: space-between; align-items:center}
+.to-top{color:#b7c2d6; text-decoration:none; border:1px solid var(--border); padding:6px 10px; border-radius:10px}
+
+@media (max-width: 860px){
+  .grid-2{grid-template-columns:1fr}
+  .hero .headline{font-size:40px}
+  .nav-toggle{display:block}
+  .nav-links{display:none; position:absolute; right:12px; top:60px; background:#0f1520; border:1px solid var(--border); border-radius:12px; padding:8px; flex-direction:column; min-width:180px}
+  .nav-links.show{display:flex}
+  .nav-links a{padding:10px 12px}
+}
